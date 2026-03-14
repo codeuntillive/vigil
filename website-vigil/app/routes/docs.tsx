@@ -1,6 +1,7 @@
 import type { Route } from "./+types/docs";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
+import { Link } from "react-router";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -15,19 +16,19 @@ export default function Docs() {
       title: "Getting Started",
       description: "Learn how to install and set up VIGIL in your project.",
       links: [
-        { text: "Installation", href: "#installation" },
-        { text: "Quick Start", href: "#quick-start" },
-        { text: "Configuration", href: "#configuration" },
+        { text: "Installation", href: "/getting-started" },
+        { text: "Quick Start", href: "/getting-started" },
+        { text: "Configuration", href: "/getting-started" },
       ]
     },
     {
       title: "Security Modules",
       description: "Detailed documentation for each security module.",
       links: [
-        { text: "Rate Limiting", href: "#rate-limiting" },
-        { text: "Bot Detection", href: "#bot-detection" },
-        { text: "SQL Injection Guard", href: "#sql-injection" },
-        { text: "Email Verification", href: "#email-verification" },
+        { text: "Rate Limiting", href: "/rate-limiting" },
+        { text: "Bot Detection", href: "/bot-detection" },
+        { text: "SQL Injection Guard", href: "/sql-injection" },
+        { text: "Email Verification", href: "/email-verification" },
         { text: "Request Monitoring", href: "#monitoring" },
         { text: "Policy Enforcement", href: "#policy" },
       ]
@@ -83,8 +84,8 @@ export default function Docs() {
                   <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                     {section.links.map((link, idx) => (
                       <li key={idx} style={{ marginBottom: '0.5rem' }}>
-                        <a 
-                          href={link.href} 
+                        <Link 
+                          to={link.href} 
                           style={{ 
                             color: 'var(--color-primary-blue)', 
                             textDecoration: 'none',
@@ -93,7 +94,7 @@ export default function Docs() {
                           }}
                         >
                           → {link.text}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>

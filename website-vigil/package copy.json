@@ -1,0 +1,24 @@
+{
+  "name": "vigil-js",
+  "version": "1.0.0",
+  "description": "Security middleware suite for Express.js",
+  "main": "index.js",
+  "type": "commonjs",
+  "author": "CodeUntillive",
+  "license": "MIT",
+  "keywords": [
+    "express",
+    "middleware",
+    "security",
+    "rate-limit",
+    "sql-injection",
+    "bot-detection"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codeuntillive/vigil"
+  },
+  "peerDependencies": {
+    "express": "^4 || ^5"
+  }
+}

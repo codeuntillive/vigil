@@ -14,7 +14,22 @@ type Pages = {
   "/": {
     params: {};
   };
+  "/getting-started": {
+    params: {};
+  };
   "/docs": {
+    params: {};
+  };
+  "/rate-limiting": {
+    params: {};
+  };
+  "/bot-detection": {
+    params: {};
+  };
+  "/email-verification": {
+    params: {};
+  };
+  "/sql-injection": {
     params: {};
   };
   "/about": {
@@ -25,15 +40,35 @@ type Pages = {
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/" | "/docs" | "/about";
+    page: "/" | "/getting-started" | "/docs" | "/rate-limiting" | "/bot-detection" | "/email-verification" | "/sql-injection" | "/about";
   };
   "routes/home.tsx": {
     id: "routes/home";
     page: "/";
   };
+  "routes/getting-started.tsx": {
+    id: "routes/getting-started";
+    page: "/getting-started";
+  };
   "routes/docs.tsx": {
     id: "routes/docs";
     page: "/docs";
+  };
+  "routes/rate-limiting.tsx": {
+    id: "routes/rate-limiting";
+    page: "/rate-limiting";
+  };
+  "routes/bot-detection.tsx": {
+    id: "routes/bot-detection";
+    page: "/bot-detection";
+  };
+  "routes/email-verification.tsx": {
+    id: "routes/email-verification";
+    page: "/email-verification";
+  };
+  "routes/sql-injection.tsx": {
+    id: "routes/sql-injection";
+    page: "/sql-injection";
   };
   "routes/about.tsx": {
     id: "routes/about";
@@ -44,6 +79,11 @@ type RouteFiles = {
 type RouteModules = {
   "root": typeof import("./app/root.tsx");
   "routes/home": typeof import("./app/routes/home.tsx");
+  "routes/getting-started": typeof import("./app/routes/getting-started.tsx");
   "routes/docs": typeof import("./app/routes/docs.tsx");
+  "routes/rate-limiting": typeof import("./app/routes/rate-limiting.tsx");
+  "routes/bot-detection": typeof import("./app/routes/bot-detection.tsx");
+  "routes/email-verification": typeof import("./app/routes/email-verification.tsx");
+  "routes/sql-injection": typeof import("./app/routes/sql-injection.tsx");
   "routes/about": typeof import("./app/routes/about.tsx");
 };
