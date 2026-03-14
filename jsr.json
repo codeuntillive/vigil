@@ -1,0 +1,24 @@
+{
+"name": "@infinty-incursion/vigil",
+"version": "1.0.4",
+"license": "MIT",
+"exports": {
+".": "./index.js",
+"./rate-limit": "./rate-limit/index.js",
+"./sql-injection": "./sql-injection/index.js",
+"./bot-detection": "./bot-detection/index.js",
+"./email-verification": "./email-verification/index.js"
+},
+"publish": {
+"include": [
+"index.js",
+"index.d.ts",
+"rate-limit/",
+"sql-injection/",
+"bot-detection/",
+"email-verification/",
+"README.md"
+]
+}
+}
+
