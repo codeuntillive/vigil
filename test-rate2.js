@@ -1,4 +1,4 @@
-const ratelimiting = require('./rate-limit');
+const ratelimiting = require('../rate-limit');
 
 // Test the key generation
 const middleware = ratelimiting({

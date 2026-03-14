@@ -1,4 +1,4 @@
-const sqlinjection = require('./sql-injection');
+const sqlinjection = require('../sql-injection');
 
 async function test() {
   console.log('=== Test SQL Injection Detection ===\n');

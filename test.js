@@ -1,4 +1,4 @@
-const vigil = require('./index.js');
+const vigil = require('../index.js');
 
 console.log('=== Test 1: Create middleware ===');
 const middleware = vigil({

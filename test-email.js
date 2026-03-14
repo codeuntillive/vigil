@@ -1,4 +1,4 @@
-const emailVerification = require('./email-verification');
+const emailVerification = require('../email-verification');
 
 async function test() {
   console.log('=== Test Email Verification ===\n');

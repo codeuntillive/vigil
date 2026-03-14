@@ -1,4 +1,4 @@
-const { ratelimiting, botDetection } = require('./index');
+const { ratelimiting, botDetection } = require('../index');
 
 console.log('=== Test Vigil Modules ===\n');
 

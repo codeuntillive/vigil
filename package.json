@@ -1,57 +1,24 @@
 {
-"name": "vigil-security",
-"version": "1.0.0",
-"description": "Express.js security middleware suite including rate limiting, SQL injection protection, bot detection, and email verification.",
-"license": "MIT",
-"author": "m0nn",
-
-"keywords": [
-"express",
-"middleware",
-"security",
-"rate-limit",
-"rate-limiting",
-"sql-injection",
-"bot-detection",
-"email-verification",
-"throttle"
-],
-
-"main": "./index.js",
-"types": "./index.d.ts",
-
-"exports": {
-".": "./index.js",
-"./rate-limit": "./rate-limit/index.js",
-"./sql-injection": "./sql-injection/index.js",
-"./bot-detection": "./bot-detection/index.js",
-"./email-verification": "./email-verification/index.js"
-},
-
-"files": [
-"index.js",
-"index.d.ts",
-"README.md",
-"rate-limit",
-"sql-injection",
-"bot-detection",
-"email-verification"
-],
-
-"engines": {
-"node": ">=14"
-},
-
-"peerDependencies": {
-"express": "^4.0.0 || ^5.0.0"
-},
-
-"devDependencies": {
-"express": "^4.18.2"
-},
-
-"scripts": {
-"test": "node test.js"
+  "name": "vigil-js",
+  "version": "1.0.0",
+  "description": "Security middleware suite for Express.js",
+  "main": "index.js",
+  "type": "commonjs",
+  "author": "CodeUntillive",
+  "license": "MIT",
+  "keywords": [
+    "express",
+    "middleware",
+    "security",
+    "rate-limit",
+    "sql-injection",
+    "bot-detection"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codeuntillive/vigil"
+  },
+  "peerDependencies": {
+    "express": "^4 || ^5"
+  }
 }
-}
-

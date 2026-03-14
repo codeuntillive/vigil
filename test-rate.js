@@ -1,4 +1,4 @@
-const ratelimiting = require('./rate-limit');
+const ratelimiting = require('../rate-limit');
 
 // Create middleware with IP combination
 const middleware = ratelimiting({
