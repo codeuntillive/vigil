@@ -1,0 +1,5 @@
+website-vigil/node_modules/
+website-vigil/dist/
+website-vigil/.env
+website-vigil/.env.local
+website-vigil/.env.development
